@@ -1,0 +1,73 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*
+ * #631d76 - purple
+ * #9e4770 - pink
+ * #fbfbfb - white
+ * #2E2532 - DARK GREY
+ * #201A23 - BLACK
+ */
+ .root {
+ 	-fx-background-color: white;
+ }
+ 
+ #hboxTop {-fx-background-color: #9e4770;}
+ 
+ #hboxBotton {-fx-background-color: #631d76;}
+ 
+ #btnLogin {
+ 	-fx-background-color: #201A23;
+ 	-fx-text-fill: #fbfbfb;
+ 	-fx-font-size: 16px;
+ }
+ 
+ #username {-fx-text-alignment: center;}
+ 
+ #homeLabel {
+ 	-fx-text-fill: #201A23;
+ 	-fx-font-family: Verdana ;
+ 	-fx-font-size: 20px;
+ 	-fx-font-weight: bolder;
+ }
+ 
+ #mainMenuVbox {-fx-background-color: #9e4770;}
+ 
+ #mainMenuHBox {-fx-background-color: #9e4770;}
+ 
+ #mainMenuHBox1 {-fx-background-color: #631d76;}
+ 
+ #pantryBtn {
+ 	-fx-background-color: #2E2532;
+ 	-fx-text-fill: #fbfbfb;
+ 	-fx-font-family: Verdana ;
+ 	-fx-font-size: 26px;
+ 	-fx-font-weight: bolder;
+ }
+ 
+  #recipeBtn {
+ 	-fx-background-color: #2E2532;
+ 	-fx-text-fill: #fbfbfb;
+ 	-fx-font-family: Verdana ;
+ 	-fx-font-size: 26px;
+ 	-fx-font-weight: bolder;
+ }
+ 
+  #plannerBtn {
+ 	-fx-background-color: #2E2532;
+ 	-fx-text-fill: #fbfbfb;
+ 	-fx-font-family: Verdana ;
+ 	-fx-font-size: 26px;
+ 	-fx-font-weight: bolder;
+ }
+ 
+ #pantryViewAnchorPane {
+ 	-fx-background-image: url("/Users/divyashree/eclipse-workspace1/Learning/bin/application/Planner.jpeg"); 
+ 	 -fx-background-repeat: stretch;   
+    -fx-background-size: 581 797;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+ }
+ 
+ 
+ 
+ 
+ 

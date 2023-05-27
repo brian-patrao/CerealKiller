@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1215.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenuController">
+   <children>
+      <AnchorPane fx:id="mainMenuAnchorPane" layoutX="-1.0" layoutY="-2.0" prefHeight="714.0" prefWidth="1262.0">
+         <children>
+            <HBox fx:id="mainMenuHBox" prefHeight="50.0" prefWidth="1262.0" style="-fx-background-color: #9e4770;" />
+            <ImageView fx:id="pantryImage" fitHeight="209.0" fitWidth="190.0" layoutX="257.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pantry.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="recipeImage" fitHeight="209.0" fitWidth="190.0" layoutX="527.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/recipe.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="plannerImage" fitHeight="209.0" fitWidth="190.0" layoutX="833.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/planner.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="pantryBtn" layoutX="253.0" layoutY="433.0" mnemonicParsing="false" onAction="#showPantryView" onMouseClicked="#showPantryView" prefHeight="50.0" prefWidth="148.0" text="Pantry" />
+            <Button fx:id="recipeBtn" layoutX="537.0" layoutY="433.0" mnemonicParsing="false" onAction="#showRecipeView" onMouseClicked="#showPlannerView" prefHeight="50.0" prefWidth="148.0" text="Recipe" />
+            <Button fx:id="plannerBtn" layoutX="829.0" layoutY="433.0" mnemonicParsing="false" onAction="#showPlannerView" onMouseClicked="#showRecipeView" prefHeight="50.0" prefWidth="148.0" text="Planner" />
+         </children>
+      </AnchorPane>
+      <HBox fx:id="mainMenuHBox1" layoutY="664.0" prefHeight="50.0" prefWidth="1262.0" style="-fx-background-color: #631d76;" />
+   </children>
+</AnchorPane>
