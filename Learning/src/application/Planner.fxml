@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="710.0" prefWidth="1215.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlannerController">
+   <children>
+      <HBox prefHeight="42.0" prefWidth="1215.0" style="-fx-background-color: #9e4770;">
+         <children>
+            <ImageView fx:id="backPlanner" fitHeight="44.0" fitWidth="56.0" onMouseClicked="#goToMainMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/left-arrow.png" />
+               </image>
+            </ImageView>
+         </children></HBox>
+      <HBox layoutY="668.0" prefHeight="42.0" prefWidth="1215.0" style="-fx-background-color: #631d76;" />
+      <Label layoutX="465.0" layoutY="52.0" text="Calendar">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <TableView fx:id="plannerView" layoutX="118.0" layoutY="122.0" prefHeight="466.0" prefWidth="786.0">
+        <columns>
+          <TableColumn fx:id="colDay" prefWidth="135.0" text="Day" />
+          <TableColumn fx:id="colBreakfast" prefWidth="231.0" text="Breakfast" />
+            <TableColumn fx:id="colLunch" prefWidth="187.0" text="Lunch" />
+            <TableColumn fx:id="colDinner" prefWidth="232.0" text="Dinner" />
+        </columns>
+      </TableView>
+      <VBox layoutX="935.0" layoutY="128.0" prefHeight="357.0" prefWidth="255.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="97.0" text="Day" />
+                  <ComboBox fx:id="cbDay" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="97.0" text="Breakfast" />
+                  <ComboBox fx:id="cbBreakfast" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="97.0" text="Lunch" />
+                  <ComboBox fx:id="cbLunch" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="97.0" text="Dinner" />
+                  <ComboBox fx:id="cbDinner" prefWidth="150.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="1069.0" layoutY="485.0" prefHeight="57.0" prefWidth="134.0" spacing="10.0">
+         <children>
+            <ImageView fx:id="updatePlan" fitHeight="57.0" fitWidth="63.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#updateDayPlan" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/updated.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
